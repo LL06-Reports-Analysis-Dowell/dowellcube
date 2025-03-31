@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DowellCubes QR Code Management</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+    
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fafafa;
+    }
+    
+    .font-syne {
+      font-family: 'Syne', sans-serif;
+    }
+    
+    .font-poppins {
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .rotate-animation {
+      animation: rotate 20s linear infinite;
+    }
+    
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease-in;
+    }
+    
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .pulse {
+      animation: pulse 3s infinite;
+    }
+    
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2);
+      }
+      70% {
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+  <div class="min-h-screen flex flex-col justify-center items-center px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <!-- Background decorative elements -->
+    <div class="absolute top-0 right-0 w-64 h-64 opacity-5 rotate-animation">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="none" />
+        <circle cx="50" cy="50" r="30" stroke="black" stroke-width="2" fill="none" />
+        <circle cx="50" cy="50" r="20" stroke="black" stroke-width="2" fill="none" />
+      </svg>
+    </div>
+    <div class="absolute bottom-0 left-0 w-48 h-48 opacity-5 rotate-animation" style="animation-direction: reverse;">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="10" width="80" height="80" stroke="black" stroke-width="2" fill="none" />
+        <rect x="25" y="25" width="50" height="50" stroke="black" stroke-width="2" fill="none" />
+        <rect x="40" y="40" width="20" height="20" stroke="black" stroke-width="2" fill="none" />
+      </svg>
+    </div>
+    
+    <!-- Main content -->
+    <div class="flex flex-col items-center gap-8 w-full sm:w-3/4 lg:w-1/2 text-center z-10">
+      <img 
+        src="https://dowellfileuploader.uxlivinglab.online/hr/logo-2-min-min.png" 
+        alt="DowellCubes" 
+        class="w-40 sm:w-52 animate__animated animate__fadeIn"
+      />
+      
+      <h2 class="font-bold font-syne text-xl sm:text-2xl lg:text-3xl text-gray-800 tracking-tight animate__animated animate__fadeIn animate__delay-1s">
+        Welcome to DowellCubes, all-in-one QR Code management platform
+      </h2>
+      
+      <p class="font-poppins text-sm sm:text-base text-gray-600 tracking-tight animate__animated animate__fadeIn animate__delay-2s">
+        Enjoy the best of all with one-time payment
+      </p>
+      
+      <div class="mt-4 flex flex-col items-center justify-center gap-8 w-full fade-in">
+        <div class="bg-gray-50 border border-gray-200 rounded-lg p-8 shadow-sm w-full max-w-md pulse">
+          <h3 class="font-syne font-bold text-xl mb-6 text-center">Ready to get started?</h3>
+          <p class="text-gray-600 mb-6">This is a dummy page. You can login with your account to change QR code links and manage your QR codes effectively.</p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4">
+            <button class="bg-black text-white font-poppins font-medium py-3 px-6 w-full sm:w-auto rounded-lg shadow-md hover:bg-gray-800 transition duration-300 transform hover:-translate-y-1">
+              Login
+            </button>
+            <button class="bg-white text-black border border-black font-poppins font-medium py-3 px-6 w-full sm:w-auto rounded-lg shadow-sm hover:bg-gray-50 transition duration-300 transform hover:-translate-y-1">
+              Create Account
+            </button>
+          </div>
+        </div>
+        
+        <div class="w-full max-w-md bg-gray-50 border border-gray-200 rounded-lg p-6 shadow-sm animate__animated animate__fadeIn animate__delay-3s">
+          <h3 class="font-syne font-bold text-lg mb-4 text-center">Contact Information</h3>
+          <p class="flex items-center justify-center gap-2 text-gray-700">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            <a href="mailto:dowell@dowellresearch.in" class="hover:underline">dowell@dowellresearch.in</a>
+          </p>
+        </div>
+      </div>
+      
+      <footer class="mt-12 text-center text-xs text-gray-500">
+        <p>© 2025 DowellCubes. All rights reserved.</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
